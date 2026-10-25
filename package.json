@@ -1,0 +1,24 @@
+{
+  "name": "ridenest",
+  "version": "1.0.0",
+  "description": "RideNest - peer-to-peer car & bike rental platform with digital rental agreements (Node.js, Express, MongoDB)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "dev:memory": "node scripts/dev-memory.js",
+    "seed": "node scripts/seed.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.7.0"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^11.3.0"
+  }
+}

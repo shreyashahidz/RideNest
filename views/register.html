@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign up - RideNest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body>
+  <header id="nav"></header>
+  <div class="auth-wrap">
+    <form class="card card-pad auth-card" id="form" novalidate>
+      <h2>Create your account</h2>
+      <p class="muted">Rent vehicles or list your own &mdash; pick how you'll use RideNest.</p>
+      <div id="err"></div>
+      <div class="field role-pick">
+        <label><input type="radio" name="role" value="renter" checked>I want to rent<small>Book cars &amp; bikes</small></label>
+        <label><input type="radio" name="role" value="owner">I own a vehicle<small>List &amp; earn</small></label>
+      </div>
+      <div class="field"><label for="name">Full name</label><input id="name" required maxlength="60" autocomplete="name"><div class="hint">Use your legal name &mdash; it appears on the rental agreement.</div></div>
+      <div class="field"><label for="email">Email</label><input type="email" id="email" required autocomplete="email"></div>
+      <div class="row">
+        <div class="field"><label for="phone">Phone</label><input type="tel" id="phone" required maxlength="20" autocomplete="tel"></div>
+        <div class="field"><label for="city">City</label><input id="city" maxlength="60"></div>
+      </div>
+      <div class="field"><label for="password">Password</label><input type="password" id="password" required minlength="8" autocomplete="new-password"><div class="hint">At least 8 characters.</div></div>
+      <button class="btn block" type="submit">Create account</button>
+      <p class="center small muted" style="margin:14px 0 0">Already registered? <a href="/login">Log in</a></p>
+    </form>
+  </div>
+  <footer id="footer"></footer>
+  <script src="/js/app.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Browse vehicles - RideNest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=6">
+  <link rel="stylesheet" href="/css/pages.css?v=6">
+</head>
+<body>
+  <header id="nav"></header>
+  <div class="container layout">
+    <aside class="card card-pad filters">
+      <h3>Filters</h3>
+      <form id="filters">
+        <div class="field"><label for="q">Search</label><input id="q" placeholder="Swift, Enfield, Koramangala..."></div>
+        <div class="field"><label for="city">City</label><select id="city"><option value="">Any</option></select></div>
+        <div class="field"><label for="type">Type</label><select id="type"><option value="">Cars &amp; bikes</option><option value="car">Cars</option><option value="bike">Bikes</option></select></div>
+        <div class="field"><label for="transmission">Transmission</label><select id="transmission"><option value="">Any</option><option value="manual">Manual</option><option value="automatic">Automatic</option></select></div>
+        <div class="field"><label for="fuel">Fuel</label><select id="fuel"><option value="">Any</option><option>petrol</option><option>diesel</option><option>electric</option><option>cng</option><option>hybrid</option></select></div>
+        <div class="field">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+            <label for="priceRange" style="margin:0;">Max price / day</label>
+            <span class="small muted" id="priceRangeVal">&#8377;10,000</span>
+          </div>
+          <input type="range" id="priceRange" min="500" max="15000" step="250" value="10000" style="width:100%; accent-color:#5b5ee7; cursor:pointer;">
+        </div>
+        <div class="row">
+          <div class="field"><label for="minPrice">Min &#8377;/day</label><input type="number" min="0" id="minPrice" placeholder="500"></div>
+          <div class="field"><label for="maxPrice">Max &#8377;/day</label><input type="number" min="0" id="maxPrice" placeholder="10000"></div>
+        </div>
+        <div class="field"><label for="pickup">Pickup</label><input type="datetime-local" id="pickup"></div>
+        <div class="field"><label for="drop">Drop</label><input type="datetime-local" id="drop"><div class="hint">Set both to see only vehicles free in that window.</div></div>
+        <button class="btn block" type="submit">Apply filters</button>
+        <button class="btn secondary block" type="button" id="reset" style="margin-top:8px">Reset</button>
+      </form>
+    </aside>
+    <main>
+      <div class="toolbar">
+        <div><h2 style="margin:0">Available vehicles</h2><span class="muted small" id="count"></span></div>
+        <select id="sort" style="width:auto">
+          <option value="newest">Newest</option><option value="priceAsc">Price: low to high</option>
+          <option value="priceDesc">Price: high to low</option><option value="rating">Top rated</option>
+        </select>
+      </div>
+      <div class="grid" id="results"><div class="spinner"></div></div>
+      <div class="pager" id="pager"></div>
+    </main>
+  </div>
+  <footer id="footer"></footer>
+  <script src="/js/app.js?v=6"></script>
+  <script src="/js/vehicles.js?v=6"></script>
+</body>
+</html>

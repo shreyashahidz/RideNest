@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RideNest - Rent cars &amp; bikes from local owners</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=10">
+  <link rel="stylesheet" href="/css/pages.css?v=10">
+</head>
+<body>
+  <header id="nav"></header>
+
+  <section class="hero hero-fleet-banner">
+    <div class="container hero-container">
+      <div class="hero-top-header">
+        <h1 class="hero-title">Rent a car or bike from someone nearby.</h1>
+      </div>
+      <div class="hero-bottom-actions">
+        <a class="btn primary hero-cta-primary" href="/vehicles">
+          <span>Browse 28+ Vehicles</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+        <a class="btn hero-cta-secondary" href="/dashboard/vehicles/new">List Your Vehicle &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container stats-overlap-container">
+    <div class="stats" id="stats"></div>
+  </div>
+
+  <div class="container hero-search-container">
+    <form class="search-box hero-search-bar" id="search">
+      <div class="search-field">
+        <label for="city">City</label>
+        <select id="city"><option value="">Any city</option></select>
+      </div>
+      <div class="search-field">
+        <label for="type">Vehicle</label>
+        <select id="type">
+          <option value="">Cars &amp; bikes</option>
+          <option value="car">Cars</option>
+          <option value="bike">Bikes</option>
+        </select>
+      </div>
+      <div class="search-field">
+        <label for="pickup">Pickup</label>
+        <input type="datetime-local" id="pickup">
+      </div>
+      <div class="search-field">
+        <label for="drop">Drop</label>
+        <input type="datetime-local" id="drop">
+      </div>
+      <button class="btn accent search-submit-btn" type="submit">Search</button>
+    </form>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="toolbar"><h2 style="margin:0">Fresh on the road</h2><a href="/vehicles">See all vehicles &rarr;</a></div>
+      <div class="grid" id="featured"><div class="spinner"></div></div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#fff">
+    <div class="container">
+      <h2 class="center">How RideNest works</h2>
+      <div class="steps" style="margin-top:28px">
+        <div class="step"><div class="num">1</div><h3>Find a vehicle</h3><p class="muted">Filter by city, type, price and your exact pickup and drop time. Only vehicles free for your slot are shown.</p></div>
+        <div class="step"><div class="num">2</div><h3>Book instantly</h3><p class="muted">See the full price up front &mdash; rent, service fee and refundable deposit &mdash; and confirm in one click.</p></div>
+        <div class="step"><div class="num">3</div><h3>Sign digitally</h3><p class="muted">A rental agreement is generated for you and the owner. Both e-sign it before the keys change hands.</p></div>
+        <div class="step"><div class="num">4</div><h3>Ride &amp; return</h3><p class="muted">Pick up, enjoy the ride, drop off on time and leave a review for the owner.</p></div>
+      </div>
+      <p class="center" style="margin-top:28px"><a class="btn" href="/dashboard/vehicles/new">Own a vehicle? List it and start earning</a></p>
+    </div>
+  </section>
+
+  <footer id="footer"></footer>
+  <script src="/js/app.js?v=10"></script>
+  <script src="/js/home.js?v=10"></script>
+</body>
+</html>

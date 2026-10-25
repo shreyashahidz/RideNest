@@ -1,0 +1,16 @@
+{
+  "version": "2026.1",
+  "title": "Short-Term Vehicle Rental Agreement",
+  "clauses": [
+    { "heading": "Purpose of rental", "text": "The Owner lets the Vehicle to the Renter for the Rental Period stated in this Agreement, for personal use only. Sub-letting, racing, towing, commercial delivery or carrying illegal goods is not permitted." },
+    { "heading": "Driver eligibility", "text": "Only the Renter, holding a valid driving licence for this class of vehicle (number recorded above), may drive. The Renter confirms they are at least 18 years old (21 for cars) and not driving under the influence of alcohol or drugs." },
+    { "heading": "Pickup and return", "text": "The Renter will collect the Vehicle at the pickup location at the agreed time and return it to the same place on or before the drop time, with the same fuel/charge level. Late returns are charged at the hourly rate for each extra hour or part of an hour." },
+    { "heading": "Condition check", "text": "Both parties will inspect the Vehicle at handover and note existing damage with photographs. The Renter returns the Vehicle in the same condition, allowing for normal wear." },
+    { "heading": "Kilometre limit", "text": "The daily kilometre limit stated above applies. Distance beyond the limit may be charged by the Owner at a rate agreed in writing between the parties." },
+    { "heading": "Security deposit", "text": "The refundable security deposit is held by the Owner and returned within 48 hours after the Vehicle is returned, less documented damage, traffic fines, tolls, cleaning or fuel shortfall." },
+    { "heading": "Fines and violations", "text": "The Renter is responsible for all traffic fines, parking charges, tolls and penalties incurred during the Rental Period." },
+    { "heading": "Accident, theft and breakdown", "text": "The Renter must inform the Owner and, where required, the police immediately after any accident, theft or breakdown. The Renter is liable for damage caused by negligence or breach of this Agreement, up to the full repair cost." },
+    { "heading": "Cancellation", "text": "The Renter may cancel a confirmed booking before pickup. The Owner may cancel before pickup only in case of genuine unavailability of the Vehicle." },
+    { "heading": "Electronic signature", "text": "Typing a full name and ticking the consent box is a valid electronic signature. Each signature is recorded with a timestamp and a fingerprint (SHA-256 hash) of the agreement text so later changes can be detected." }
+  ]
+}
