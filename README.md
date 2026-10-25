@@ -16,7 +16,7 @@ npm install
 npm run dev:memory
 ```
 
-**Option B - Using local MongoDB:** make sure `mongod` is active, configure `.env` (refer to `.env.example`), then run:
+**Option B - Using local MongoDB:** make sure `mongod` is active, then run:
 
 ```bash
 npm run seed

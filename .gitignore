@@ -1,5 +1,5 @@
 node_modules/
-.env
+.env*
 data/.mongo/
 data/agreements/*.json
 *.log
